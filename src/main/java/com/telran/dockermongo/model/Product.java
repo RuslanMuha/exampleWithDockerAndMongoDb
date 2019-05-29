@@ -1,4 +1,4 @@
-package com.telran.dockermongohomework.model;
+package com.telran.dockermongo.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
@@ -9,10 +9,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString
-@Document
+@Document(collection = "products_collection")
 public class Product {
-    //1. Product -> product
-    //2. product -> products
+
 
     @Id
     private String id;
